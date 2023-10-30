@@ -5,7 +5,7 @@ function check_FE_solution_error_1D_quadratic
 format short e
 
 %Check the 2D linear finite element.
-basis_type=102
+basis_type=102 % 使用二次单元求解
 %The problem domain is [left,right]*[bottom,top].
 left=0;
 right=1;

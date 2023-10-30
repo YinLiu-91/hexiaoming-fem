@@ -24,8 +24,10 @@ function result=poisson_solver_1D(left,right,h_partition,basis_type,Gauss_point_
 
 %h_basis is the step size for the finite element nodes, not the partition.
 
+% 单元数
 N_partition=(right-left)/h_partition;
 
+% 根据单元类型，得到基函数个数
 if basis_type==102
     N_basis=N_partition*2;
 elseif basis_type==101
@@ -44,21 +46,22 @@ end
 
 
 %Guass quadrature's points and weights on the refenrece interval [-1,1].
+% 产生1D 单元的高斯点坐标与系数
 [Gauss_coefficient_reference_1D,Gauss_point_reference_1D]=generate_Gauss_reference_1D(Gauss_point_number);
 
 %Assemble the stiffness matrix.
-number_of_elements=N_partition;
-matrix_size=[N_basis+1 N_basis+1];
+number_of_elements=N_partition; % 注意单元数与N_basis 的区别
+matrix_size=[N_basis+1 N_basis+1]; % N_basis是有限元节点的个数
 vector_size=N_basis+1;
 if basis_type==102
-    number_of_trial_local_basis=3;
+    number_of_trial_local_basis=3; % 2阶的话每个单元三个有限元节点，所以 trial和test 都是3
     number_of_test_local_basis=3;
 elseif basis_type==101
-    number_of_trial_local_basis=2;
+    number_of_trial_local_basis=2; % 同上，但是1阶只有两个有限元节点，trial 和test都是2
     number_of_test_local_basis=2;
 end
 
-%Assemble the stiffness matrix
+%Assemble the stiffness matrix 组装刚度矩阵，因为是椭圆方程，所以trial和test都是一阶导数，二次元的一阶导数
 A=assemble_matrix_from_1D_integral('function_a',M_partition,T_partition,T_basis,T_basis,number_of_trial_local_basis,number_of_test_local_basis,number_of_elements,matrix_size,Gauss_coefficient_reference_1D,Gauss_point_reference_1D,basis_type,1,basis_type,1);
 
 

@@ -12,9 +12,10 @@ left=0;
 right=1;
 
 
+% 高斯点的个数
 Gauss_point_number=4;
 
-
+% 网格大小1/4
 h_partition=1/4
 uh=poisson_solver_1D(left,right,h_partition,basis_type,Gauss_point_number);
 

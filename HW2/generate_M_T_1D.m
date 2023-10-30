@@ -40,33 +40,33 @@ h=h_partition;
 
 if basis_type==101
 
-   N=(right-left)/h;
-   M=zeros(1,N+1);
-   T=zeros(2,N);
+   N=(right-left)/h; % 存储了
+   M=zeros(1,N+1); % 存储了网格坐标
+   T=zeros(2,N); % 存储了每个单元上的节点的全局编号
 
    for i=1:N+1
-       M(1,i)=left+(i-1)*h;       
+       M(1,i)=left+(i-1)*h; % 计算坐标       
    end
 
-   for i=1:N
+   for i=1:N % 计算得到每个单元节点的全局编号，类似 1---2  2---3 3---4 4---5 ... 这种
        T(1,i)=i;    
        T(2,i)=i+1;
    end
    
-elseif basis_type==102
+elseif basis_type==102 % 二阶单元
 
    N=(right-left)/h;
-   dh=h/2;
-   dN=N*2;
-   M=zeros(1,dN+1);
-   T=zeros(2,dN);
+   dh=h/2; % 由于单元中间还有个点，dh为h的一半
+   dN=N*2; % 单元数加倍
+   M=zeros(1,dN+1); % 坐标数
+   T=zeros(2,dN); % 全局有限元节点数量(不是网格节点)
 
    for i=1:dN+1
        M(1,i)=left+(i-1)*dh;       
    end
 
-   for i=1:N
-       T(1,i)=2*i-1;    
+   for i=1:N % 全局节点编号， 类似 1--2--3 3--4--5 5--6--7 这种 
+       T(1,i)=2*i-1;     
        T(2,i)=2*i+1;
        T(3,i)=2*i;
    end
