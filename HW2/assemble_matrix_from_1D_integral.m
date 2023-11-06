@@ -35,8 +35,8 @@ result=sparse(matrix_size(1),matrix_size(2)); % 初始化稀疏矩阵
 for n=1:number_of_elements % 对网格单元做循环(不是有限元单元)
    
     vertices=M_partition(:,T_partition(:,n)); % 通过T获取全局节点编号，进而获得节点处的坐标
-    lower_bound=min(vertices(1),vertices(2)); % 获取左右坐标
-    upper_bound=max(vertices(1),vertices(2));
+    lower_bound=min(vertices(1),vertices(2)); % 获取左右(下)坐标
+    upper_bound=max(vertices(1),vertices(2)); 
     [Gauss_coefficient_local_1D,Gauss_point_local_1D]=generate_Gauss_local_1D(Gauss_coefficient_reference_1D,Gauss_point_reference_1D,lower_bound,upper_bound);
    
     for alpha=1:number_of_trial_local_basis

@@ -4,6 +4,15 @@ function check_FE_solution_error_1D_linear
 
 format short e
 
+%{
+说明,与HW2相比：
+1. 这是线性单元，HW2是二次单元
+2. 都是求解二阶椭圆方程
+3. 增加了Neumann,Robin边界条件
+4. 增加了无穷范，L2范，H1范误差计算
+%}
+
+
 %Check the 2D linear finite element.
 basis_type=101
 

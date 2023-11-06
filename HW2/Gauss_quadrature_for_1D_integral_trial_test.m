@@ -23,6 +23,9 @@ Gpn=length(Gauss_coefficient_local_1D);
 
 result=0;
 for i=1:Gpn
-     result=result+Gauss_coefficient_local_1D(i)*feval(coefficient_function_name,Gauss_point_local_1D(i))*local_basis_1D(Gauss_point_local_1D(i),trial_vertices,trial_basis_type,trial_basis_index,trial_derivative_degree)*local_basis_1D(Gauss_point_local_1D(i),test_vertices,test_basis_type,test_basis_index,test_derivative_degree);
+     result=result+Gauss_coefficient_local_1D(i)* \ % 高斯积分权重
+     feval(coefficient_function_name,Gauss_point_local_1D(i))*\ % 被积函数项的系数
+     local_basis_1D(Gauss_point_local_1D(i),trial_vertices,trial_basis_type,trial_basis_index,trial_derivative_degree)*\ % 被积函数项的trial项
+     local_basis_1D(Gauss_point_local_1D(i),test_vertices,test_basis_type,test_basis_index,test_derivative_degree); % 被积函数项的test项
 end    
 

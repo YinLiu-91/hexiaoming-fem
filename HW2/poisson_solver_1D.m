@@ -72,7 +72,7 @@ b=assemble_vector_from_1D_integral('function_f',M_partition,T_partition,T_basis,
 %Get the information matrix for boundary nodes.
 boundary_nodes=generate_boundary_nodes_1D(N_basis);
 
-%Deal with Dirichlet boundary condition.
+%Deal with Dirichlet boundary condition. 注意，dirchlet边界要在最后处理，即robin，neumann先于它处理
 [A,b]=treat_Dirichlet_boundary_1D('function_g',A,b,boundary_nodes,M_basis);
 
 %Compute the numerical solution

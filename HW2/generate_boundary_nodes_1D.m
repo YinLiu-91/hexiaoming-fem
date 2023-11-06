@@ -23,9 +23,9 @@ function boundary_nodes=generate_boundary_nodes_1D(N_basis)
 
 %The following boundary condition may change for different problems.
 %All Dirichlet boundary nodes.
-boundary_nodes(1,1)=-1;
-boundary_nodes(2,1)=1;
-boundary_nodes(3,1)=-1;
+boundary_nodes(1,1)=-1; % 边界类型，-1：dirichlet，-2：neumann，-3：robin
+boundary_nodes(2,1)=1; % 全局编号
+boundary_nodes(3,1)=-1; % 法向量
 boundary_nodes(1,2)=-1;
 boundary_nodes(2,2)=N_basis+1;
 boundary_nodes(3,2)=1;

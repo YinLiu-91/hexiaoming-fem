@@ -6,8 +6,8 @@ function result=local_basis_1D(x,vertices,basis_type,basis_index,derivative_degr
 %basis_type: the type of the FE.
 %basis_type=101:1D linear FE.
 %basis_type=102:1D quadratic FE.
-%basis_index: the index of basis function to specify which basis function we want to use.
-%derivative_degree:the derivative degree of the FE basis function.
+%basis_index: the index of basis function to specify which basis function we want to use. 表示对哪个基函数操作
+%derivative_degree:the derivative degree of the FE basis function. 表示对基函数的几次导数
 
 
 
