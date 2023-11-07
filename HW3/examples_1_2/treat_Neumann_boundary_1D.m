@@ -7,8 +7,8 @@ function b=treat_Neumann_boundary_1D(Neumann_boundary_function_name,b,boundary_n
 %boundary_nodes(1,k): specifiy the type of the kth boundary node.
 %boundary_nodes(1,k)=-1: Dirichlet boundary node;
 %boundary_nodes(1,k)=-2: Neumann boundary node;
-%boundary_nodes(1,k)=-3: Robin boundary node. 
-%boundary_nodes(2,k): global index of the kth boundary node among all nodes of FE. 
+%boundary_nodes(1,k)=-3: Robin boundary node.
+%boundary_nodes(2,k): global index of the kth boundary node among all nodes of FE.
 %                     That is, the index of FE is used here.
 %M_partition: store the coordinates of all the grid points of the partition,not FE.
 %T_partition: store the global indices of the grid points of every element for the partition,not FE.
@@ -29,12 +29,14 @@ for k=1:nbn
 
 %If the kth boundary edge is a Neumann boundary edge,then we add the corresponding values to b.
 
-    if boundary_nodes(1,k)==-2 
-        
-        normal_direction=boundary_nodes(3,k);
-        i=boundary_nodes(2,k);
+    if boundary_nodes(1,k)==-2 % 若是neumann边界条件的话
+
+        % https://www.bilibili.com/video/BV1xz4y1r78J?t=3750.3
+        normal_direction=boundary_nodes(3,k); % 得到其外法向量，这里参考上面链接
+        i=boundary_nodes(2,k); % 得到其全局节点编号
+        % 将对应位置加上相应值即可
         b(i,1)=b(i,1)+normal_direction*feval(Neumann_boundary_function_name,M_basis(i));
-        
+
     end
 
 end
