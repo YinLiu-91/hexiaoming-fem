@@ -37,10 +37,13 @@ for k=1:nbn
 
     if boundary_nodes(1,k)==-3  % 若是robin边界
 
-        normal_direction=boundary_nodes(3,k); % 获取其
-        i=boundary_nodes(2,k);
+        normal_direction=boundary_nodes(3,k); % 获取其法向位置
+        i=boundary_nodes(2,k); % 是对哪个节点添加对robin边界
+
+        % 对于右端项，需要+pb*cb
         b(i,1)=b(i,1)+normal_direction*feval(Neumann_boundary_function_name,M_basis(i));
 
+        % 对于左端项，需要加到某个节点的位置
         A(i,i)=A(i,i)+normal_direction*feval(Robin_boundary_function_name,M_basis(i));
 
     end

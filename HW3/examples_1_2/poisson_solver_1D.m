@@ -40,7 +40,7 @@ if basis_type==102
 elseif basis_type==101
     M_basis=M_partition;
     T_basis=T_partition;
-end 
+end
 
 
 %Guass quadrature's points and weights on the refenrece interval [-1,1].
@@ -67,12 +67,13 @@ A=assemble_matrix_from_1D_integral('function_a',M_partition,T_partition,T_basis,
 b=assemble_vector_from_1D_integral('function_f',M_partition,T_partition,T_basis,number_of_test_local_basis,number_of_elements,vector_size,Gauss_coefficient_reference_1D,Gauss_point_reference_1D,basis_type,0)
 
 %Get the information matrix for boundary nodes.
-boundary_nodes=generate_boundary_nodes_1D(N_basis);
+boundary_nodes=generate_boundary_nodes_1D(N_basis); % 这里产生的是边界点的信息矩阵
 
 %Deal with Neumann boundary condition. If we don't have Neumann boundary condition at all, we can comment the following line to save time and memory.
 b=treat_Neumann_boundary_1D('function_q_tilde',b,boundary_nodes,M_basis);
 
 %Deal with Robin boundary condition. If we don't have Robin boundary condition at all, we can comment the following line to save time and memory.
+% 相关视频教程 https://www.bilibili.com/video/BV1xz4y1r78J?t=3862.2 解释了q，p的含义
 [A,b]=treat_Robin_boundary_1D('function_q','function_p',A,b,boundary_nodes,M_basis);
 
 %Deal with Dirichlet boundary condition.
