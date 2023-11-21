@@ -39,15 +39,17 @@ r=sparse(matrix_size(1),matrix_size(2));
 %Go through all elements.
 %On each element, compute the volume integrals for all possible combinations of trial and test FE basis functions.
 %Assemble the values of those volume integrals into the matrix.
-for n=1:number_of_elements
+for n=1:number_of_elements    % 对所有单元循环
    
     vertices=M_partition(:,T_partition(:,n));
     [Gauss_coefficient_local_triangle,Gauss_point_local_triangle]=generate_Gauss_local_triangle(Gauss_coefficient_reference_triangle,Gauss_point_reference_triangle,vertices);
    
-    for alpha=1:number_of_trial_local_basis
+    for alpha=1:number_of_trial_local_basis % 对某个单元所有的trial函数循环
        for beta=1:number_of_test_local_basis      
           temp=Gauss_quadrature_for_volume_integral_trial_test_triangle(coefficient_function_name,Gauss_coefficient_local_triangle,Gauss_point_local_triangle,vertices,trial_basis_type,alpha,trial_derivative_degree_x,trial_derivative_degree_y,test_basis_type,beta,test_derivative_degree_x,test_derivative_degree_y);
-          r(T_basis_test(beta,n),T_basis_trial(alpha,n))=r(T_basis_test(beta,n),T_basis_trial(alpha,n))+temp;
+          
+          % 注意r矩阵的下标，alpha用于寻找r矩阵的列位置，因为未知量是和trial相乘的
+          r(T_basis_test(beta,n),T_basis_trial(alpha,n))=r(T_basis_test(beta,n),T_basis_trial(alpha,n))+temp; % 
        end
     end
 

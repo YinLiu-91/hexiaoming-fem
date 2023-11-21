@@ -34,12 +34,12 @@ r=zeros(vector_size,1);
 %Go through all elements.
 %On each element, compute the volume integrals for all test FE basis functions.
 %Assemble the values of those volume integrals into the vector.
-for n=1:number_of_elements
+for n=1:number_of_elements  % 对所有单元循环
 
     vertices=M_partition(:,T_partition(:,n));
     [Gauss_coefficient_local_triangle,Gauss_point_local_triangle]=generate_Gauss_local_triangle(Gauss_coefficient_reference_triangle,Gauss_point_reference_triangle,vertices);
 
-    for beta=1:number_of_test_local_basis     
+    for beta=1:number_of_test_local_basis % 对所有基函数循环，注意，这里依然是面积分    
        temp=Gauss_quadrature_for_volume_integral_test_triangle(coefficient_function_name,Gauss_coefficient_local_triangle,Gauss_point_local_triangle,vertices,test_basis_type,beta,test_derivative_degree_x,test_derivative_degree_y);
        r(T_basis_test(beta,n),1)=r(T_basis_test(beta,n),1)+temp;
     end

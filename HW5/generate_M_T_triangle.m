@@ -46,9 +46,9 @@ if basis_type==1
 
    N1=(right-left)/h(1);
    N2=(top-bottom)/h(2);
-   tnp=(N1+1)*(N2+1);
-   M=zeros(2,tnp);
-   T=zeros(3,2*N1*N2);
+   tnp=(N1+1)*(N2+1);                     % 总的节点数
+   M=zeros(2,tnp);                        % 节点坐标
+   T=zeros(3,2*N1*N2);                    % 三角单元信息矩阵,每一列表示某个三角单元的三个顶点的全局编号
    Q=zeros(N1+1,N2+1);
 
    for j=1:tnp

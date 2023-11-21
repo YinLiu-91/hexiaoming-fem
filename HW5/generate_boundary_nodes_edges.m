@@ -31,12 +31,12 @@ function [boundary_nodes,boundary_edges]=generate_boundary_nodes_edges(N1_basis,
 
 %Information matrix for boundary nodes. It uses the index of FE, not the index of partition.
 
-nbn=2*(N1_basis+N2_basis);
-boundary_nodes=zeros(2,nbn);
+nbn=2*(N1_basis+N2_basis);      % 边界边的个数
+boundary_nodes=zeros(2,nbn);    % 边界边上的顶点
 
 %The following boundary condition may change for different problems.
 %All Dirichlet boundary nodes.
-boundary_nodes(1,:)=-1;
+boundary_nodes(1,:)=-1;         % 每个顶点上都是dirichlet边界
 
 %The index in the following is associated with the index in "generate_M_T_triangle.m".
 %bottom boundary nodes.
@@ -64,7 +64,7 @@ end
 
 
 %Information matrix for boundary edges. It uses the index of partition, not the index of FE.
-
+% 这里是网格边界信息，注意不是有限元信息，因为物理条件的添加是针对网格的，不是针对有限元划分的
 nbe=2*(N1_partition+N2_partition);
 boundary_edges=zeros(4,nbe);
 
