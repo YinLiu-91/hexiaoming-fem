@@ -41,7 +41,7 @@ r=sparse(matrix_size(1),matrix_size(2));
 %Assemble the values of those volume integrals into the matrix.
 for n=1:number_of_elements    % 对所有单元循环
    
-    vertices=M_partition(:,T_partition(:,n));
+    vertices=M_partition(:,T_partition(:,n)); % 下面产生的是根据参考单元积分点，和实际单元顶点坐标产生局部积分点
     [Gauss_coefficient_local_triangle,Gauss_point_local_triangle]=generate_Gauss_local_triangle(Gauss_coefficient_reference_triangle,Gauss_point_reference_triangle,vertices);
    
     for alpha=1:number_of_trial_local_basis % 对某个单元所有的trial函数循环

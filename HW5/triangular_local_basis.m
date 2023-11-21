@@ -23,10 +23,10 @@ J_11=vertices(1,2)-vertices(1,1);
 J_12=vertices(1,3)-vertices(1,1);
 J_21=vertices(2,2)-vertices(2,1);
 J_22=vertices(2,3)-vertices(2,1);
-J_det=J_11*J_22-J_12*J_21;
-
-x_hat=(J_22*(x-vertices(1,1))-J_12*(y-vertices(2,1)))/J_det;
-y_hat=(-J_21*(x-vertices(1,1))+J_11*(y-vertices(2,1)))/J_det;
+J_det=J_11*J_22-J_12*J_21;        % 2x2矩阵的秩
+% x,y分别是实际坐标系下的高斯积分坐标点，vertices则是三角形网格的真实坐标
+x_hat=(J_22*(x-vertices(1,1))-J_12*(y-vertices(2,1)))/J_det;    % 通过变换得到真实的坐标
+y_hat=(-J_21*(x-vertices(1,1))+J_11*(y-vertices(2,1)))/J_det;   % 假如将前面得到的参考单元积分点直接传进来，可以不用在这里算?
 
 if derivative_degree_x==0&&derivative_degree_y==0
     r=triangular_reference_basis(x_hat,y_hat,basis_type,basis_index,0,0);

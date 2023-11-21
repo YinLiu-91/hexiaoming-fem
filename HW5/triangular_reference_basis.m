@@ -115,7 +115,8 @@ if basis_type==2
 
 
 elseif basis_type==1
-
+    % 从这里看出，型函数分别为，点1：1-x-y，点2:x,点3：y
+    % basis_index表示参考三角形三点的编号，表示了对哪个型函数进行计算
     if derivative_degree_x==0&&derivative_degree_y==0
         
         if basis_index==1

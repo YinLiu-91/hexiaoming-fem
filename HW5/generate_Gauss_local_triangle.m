@@ -6,6 +6,7 @@ function [Gauss_coefficient_local_triangle,Gauss_point_local_triangle]=generate_
 %vertices_triangle: the coordinates of the vertices of the local triangle 
 %Gauss_coefficient_local_triangle,Gauss_point_local_triangle:the Gauss coefficients and Gauss points on the local triangle.
 
+% 目的是为了得到实际坐标中断积分点位置，积分系数
 x1=vertices_triangle(1,1);
 y1=vertices_triangle(2,1);
 x2=vertices_triangle(1,2);
