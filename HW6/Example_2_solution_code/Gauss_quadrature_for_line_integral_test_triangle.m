@@ -22,7 +22,7 @@ Gpn=length(Gauss_coefficient_reference_1D);
 r=0;
 
 if end_point_1(2)==end_point_2(2)
-%The edge is horizontal.
+%The edge is horizontal. % y坐标相等，则是水平单元
 
     lower_bound=min(end_point_1(1),end_point_2(1));
     upper_bound=max(end_point_1(1),end_point_2(1));
