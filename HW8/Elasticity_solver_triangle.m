@@ -29,16 +29,16 @@ elseif basis_type==1
 end
 
 %Mesh information for partition and finite element basis functions.
-[M_partition,T_partition]=generate_M_T_triangle(left,right,bottom,top,h_partition,1);
+[M_partition,T_partition]=generate_M_T_triangle(left,right,bottom,top,h_partition,1);       % 产生网格信息，M_partition为点坐标信息，T_partition为每个单元上每个网格节点的全局编号信息
 
-if basis_type==1
+if basis_type==1          % 若为线性单元，则有限元节点与网格节点重合，否则
     M_basis=M_partition;
     T_basis=T_partition;
-else
+else                      % 二阶单元需要产生新的有限元节点矩阵
     [M_basis,T_basis]=generate_M_T_triangle(left,right,bottom,top,h_partition,basis_type);
 end 
 
-
+% 产生参考单元上高斯积分点与积分点处的系数
 %Guass quadrature's points and weights on the refenrece triangle and reference interval.
 [Gauss_coefficient_reference_triangle,Gauss_point_reference_triangle]=generate_Gauss_reference_triangle(9);
 %The following line is necessary if we need to deal with stress or Robin boundary condition. 
@@ -47,20 +47,20 @@ end
 
 
 %Assemble the matrix.
-number_of_elements=2*N1_partition*N2_partition;
-number_of_edges=(N1_partition+1)*N2_partition+N1_partition*(2*N2_partition+1);
+number_of_elements=2*N1_partition*N2_partition;                                       % 计算单元个数 （128）                               
+number_of_edges=(N1_partition+1)*N2_partition+N1_partition*(2*N2_partition+1);        % 计算边的个数（208）
 
 if basis_type==2||basis_type==1
-    matrix_size=[(N1_basis+1)*(N2_basis+1) (N1_basis+1)*(N2_basis+1)];
-    vector_size=(N1_basis+1)*(N2_basis+1);
-    number_of_FE_nodes=(N1_basis+1)*(N2_basis+1);
+    matrix_size=[(N1_basis+1)*(N2_basis+1) (N1_basis+1)*(N2_basis+1)];                % 计算矩阵的大小，为有限元节点数大小^2
+    vector_size=(N1_basis+1)*(N2_basis+1);                                            % 计算向量的大小的，为有限元节点数大小
+    number_of_FE_nodes=(N1_basis+1)*(N2_basis+1);                                     % 计算有限元节点数(非网格节点数，在1阶时这俩才相等)                                                         
 elseif basis_type==10
     matrix_size=[number_of_edges number_of_edges];
     vector_size=number_of_edges;
     number_of_FE_nodes=number_of_edges;
 end
 
-if basis_type==2
+if basis_type==2 % 确定单元上trial，test的下标
     trial_basis_index=[1 2 3 4 5 6];
     test_basis_index=[1 2 3 4 5 6];
 elseif basis_type==1||basis_type==10
