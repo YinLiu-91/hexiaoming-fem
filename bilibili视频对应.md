@@ -47,18 +47,16 @@
 5. [1:34:30 不同类型方程通用格式举例](https://www.bilibili.com/video/BV13p4y1x7xs?t=5670.7)
 6. [1:51:01 neumann边界的添加过程，循环所有边界边，对其中的neumann边界找到其母单元(即二维问题中的三角形，四边形等单元），（获取其型函数），得到积分结果，]()
 
-# []()
-1. []()
-2. []()
-3. []()
-4. []()
-5. []()
-6. []()
-7. []()
-8. []()
-9. []()
-10. []()
-11. []()
+# [2021-1-07](https://www.bilibili.com/video/BV1ET4y1N77h?t=8.7)
+
+# [2021-1-10](https://www.bilibili.com/video/BV1CK411M71t?t=11.6)
+1. [1:17:00 neumann边界](https://www.bilibili.com/video/BV1CK411M71t?t=4620.3)
+2. [1:31:15 robin边界](https://www.bilibili.com/video/BV1CK411M71t?t=5477.3)
+3. [43:04 弹性方程的组装](https://www.bilibili.com/video/BV1CK411M71t?t=2585.1)
+4. [1:43:10 robin边界的程序编写](https://www.bilibili.com/video/BV1CK411M71t?t=6190.8)
+5. [1:43:30 neumann，robin，要在direchlet边界之前处理，因为direchlet会强行赋值](https://www.bilibili.com/video/BV1CK411M71t?t=6211.2)
+6. [2:13:26 comsol发展](https://www.bilibili.com/video/BV1CK411M71t?t=8006.9)
+
 
    
 
