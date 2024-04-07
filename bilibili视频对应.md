@@ -33,3 +33,4 @@
 5. [1:56:40 Tb 是用局部基函数的存储规则记录全基函数编号](https://www.bilibili.com/video/BV1xz4y1r78J?t=7000.8)
 6. [2:09:25 neumann 边界v(a)=1 的原因，基函数在此节点值为1](https://www.bilibili.com/video/BV1xz4y1r78J?t=7765.5)
 7. [00:20:00 局部基函数参考单元](https://www.bilibili.com/video/BV1xz4y1r78J?t=1200.5)
+
