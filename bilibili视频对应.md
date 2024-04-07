@@ -57,6 +57,31 @@
 5. [1:43:30 neumann，robin，要在direchlet边界之前处理，因为direchlet会强行赋值](https://www.bilibili.com/video/BV1CK411M71t?t=6211.2)
 6. [2:13:26 comsol发展](https://www.bilibili.com/video/BV1CK411M71t?t=8006.9)
 
+# [2021-1-17](https://www.bilibili.com/video/BV1vt4y1z7mG?t=4.6)
+1. [1:38:10 波方程](https://www.bilibili.com/video/BV1vt4y1z7mG?t=5890.1)
+2. [0:15:05 时间相关矩阵的一般形式](https://www.bilibili.com/video/BV1vt4y1z7mG?t=905.8)
+3. [0:17:48 与时间相关的仅为系数函数c](https://www.bilibili.com/video/BV1vt4y1z7mG?t=1069.3)
+4. [0:35:29 时间相关ode](https://www.bilibili.com/video/BV1vt4y1z7mG?t=2129.7)
+5. [0:39:51 theta格式下的方程](https://www.bilibili.com/video/BV1vt4y1z7mG?t=2391.7)
+6. [0:40:31 方程中系数c的定义](https://www.bilibili.com/video/BV1vt4y1z7mG?t=2433.5)
+7. [0:37:18 不同theta对应不同时间差分格式](https://www.bilibili.com/video/BV1vt4y1z7mG?t=2238.6)
+8. [1:52:40 分部积分的意义，divergence 变换过去(即分部积分)是gradient](https://www.bilibili.com/video/BV1vt4y1z7mG?t=6761.1)
+
+
+
+
+# [2021-3-28](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=29.3)
+1. [00:38:22 trail 和test有对不同坐标的偏导](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=2303.6)
+2. [3:30 整体内容介绍](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=211.2)
+3. [26:31 线弹性方程推导细节](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=1592.0)
+4. [0:32:55 一个标量的梯度是向量，一个向量的梯度是张量](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=1975.9)
+5. [51:01 最终矩阵的分块组成](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=3062.4)
+6. [44:20 向量形式的有限元离散](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=2660.7)
+7. [0:31:02 内积test函数的意义 表示第一个方程乘v1 第二个方程乘v2](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=1865.8)
+8. [0:48:30 矩阵分块的由因](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=2911.7)
+9. [1:40:30 弹性方程的stress和robin边界可用于stoke](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=6030.8)
+10. [1:41:45 stress边界添加（即neumann边界）在以前处理dirichlet边界时，由于其边界处值已知，可以不做测试，因此设置测试函数为0，简化方程，后面再处理此边界，但是现在stress边界时，边界处的值未知，因此需要做测试，不能将测试函数置零](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=6106.3)
+11. [1:44:00 方程中由于都是u的导数，为stress边界时，解是不唯一的](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=6241.4)
 
    
 
