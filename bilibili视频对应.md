@@ -34,3 +34,31 @@
 6. [2:09:25 neumann 边界v(a)=1 的原因，基函数在此节点值为1](https://www.bilibili.com/video/BV1xz4y1r78J?t=7765.5)
 7. [00:20:00 局部基函数参考单元](https://www.bilibili.com/video/BV1xz4y1r78J?t=1200.5)
 
+# [2020-12-24](https://www.bilibili.com/video/BV1Ra4y1J7LE?t=4.6)
+
+# [2020-12-27](https://www.bilibili.com/video/BV1e5411H7AP?t=8.8)
+
+
+# [2021-1-03](https://www.bilibili.com/video/BV13p4y1x7xs?t=4.9)
+1. [1:39:16 neumann边界](https://www.bilibili.com/video/BV13p4y1x7xs?t=5957.0)
+2. [0:10:20 多次分部积分公式](https://www.bilibili.com/video/BV13p4y1x7xs?t=620.3)
+3. [0:38:45 二维stiffness矩阵积分(可由r,s,p,q控制](https://www.bilibili.com/video/BV13p4y1x7xs?t=2325.4)
+4. [0:58:25 direchlet 边界所属的节点方程要删掉的原因](https://www.bilibili.com/video/BV13p4y1x7xs?t=3509.5)
+5. [1:34:30 不同类型方程通用格式举例](https://www.bilibili.com/video/BV13p4y1x7xs?t=5670.7)
+6. [1:51:01 neumann边界的添加过程，循环所有边界边，对其中的neumann边界找到其母单元(即二维问题中的三角形，四边形等单元），（获取其型函数），得到积分结果，]()
+
+# []()
+1. []()
+2. []()
+3. []()
+4. []()
+5. []()
+6. []()
+7. []()
+8. []()
+9. []()
+10. []()
+11. []()
+
+   
+
