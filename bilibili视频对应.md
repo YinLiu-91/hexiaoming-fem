@@ -19,4 +19,17 @@
 15. [1:58:32 边界条件的遍历](https://www.bilibili.com/video/BV1Yt4y1Y7ik?t=7112.5)
 
 # [2020-12-13](https://www.bilibili.com/video/BV13r4y1F7mw?t=1.2)
-1. 
+1. [1:20:37 单元矩阵组装的基函数](https://www.bilibili.com/video/BV13r4y1F7mw?t=4837.3)
+2. [2:10:35 高斯点的答疑](https://www.bilibili.com/video/BV13r4y1F7mw?t=7835.3)
+3. [2:15:30 注意单元顶点与有限元节点的不同，其一阶时是指的同位置，单元顶点可用来得到高斯积分点位置](https://www.bilibili.com/video/BV13r4y1F7mw?t=8131.4)
+4. [复习与一维代码编写-28:00 开始编写代码](https://www.bilibili.com/video/BV13r4y1F7mw?t=1680.9)
+
+# [2020-12-20](https://www.bilibili.com/video/BV1xz4y1r78J?t=0.9)
+1. [1:00:00 neumann边界条件添加](https://www.bilibili.com/video/BV1xz4y1r78J?t=3600.7)
+1. [1:04:40 robin边界](https://www.bilibili.com/video/BV1xz4y1r78J?t=3880.5)
+2. [1:16:50 有限元函数 local fe function](https://www.bilibili.com/video/BV1xz4y1r78J?t=4610.8)
+3. [1:24:28 误差计算伪代码](https://www.bilibili.com/video/BV1xz4y1r78J?t=5068.6)
+4. [1:54:40 有限元点，高斯点关系](https://www.bilibili.com/video/BV1xz4y1r78J?t=6880.5)
+5. [1:56:40 Tb 是用局部基函数的存储规则记录全基函数编号](https://www.bilibili.com/video/BV1xz4y1r78J?t=7000.8)
+6. [2:09:25 neumann 边界v(a)=1 的原因，基函数在此节点值为1](https://www.bilibili.com/video/BV1xz4y1r78J?t=7765.5)
+7. [00:20:00 局部基函数参考单元](https://www.bilibili.com/video/BV1xz4y1r78J?t=1200.5)
