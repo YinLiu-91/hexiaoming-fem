@@ -78,7 +78,7 @@
 5. [51:01 最终矩阵的分块组成](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=3062.4)
 6. [44:20 向量形式的有限元离散](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=2660.7)
 7. [0:31:02 内积test函数的意义 表示第一个方程乘v1 第二个方程乘v2](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=1865.8)
-8. [0:48:30 矩阵分块的由因](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=2911.7)
+8. [0:48:30 矩阵分块的由因，由于test函数是可选的，所以对于v1选了…[1,0]形式，对于v2选了[0，1]形式](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=2911.7)
 9. [1:40:30 弹性方程的stress和robin边界可用于stoke](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=6030.8)
 10. [1:41:45 stress边界添加（即neumann边界）在以前处理dirichlet边界时，由于其边界处值已知，可以不做测试，因此设置测试函数为0，简化方程，后面再处理此边界，但是现在stress边界时，边界处的值未知，因此需要做测试，不能将测试函数置零](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=6106.3)
 11. [1:44:00 方程中由于都是u的导数，为stress边界时，解是不唯一的](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=6241.4)
