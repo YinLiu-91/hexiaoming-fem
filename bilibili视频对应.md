@@ -95,7 +95,7 @@
 8. [1:11:15 切向标量形式不会出现p](https://www.bilibili.com/video/BV19U4y1873J?t=4275.0)
 9. [1:33:36 3x3分块阵的由来 第一二行由第一个方程得到 第三行由第二个方程得到](https://www.bilibili.com/video/BV19U4y1873J?t=5618.5)
 
-#[2021-04-11](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=6.3)
+# [2021-04-11](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=6.3)
 1. [1:05:25 给出了T(u,p) D(u)的定义](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=3927.8)
 2. [1:03:48 非线性问题](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=3828.8)
 3. [1:06:17 推导弱格式，对方程内积v](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=3977.1)
@@ -115,8 +115,20 @@
 3. [1:44:27  A3，A4；A5，A7；A6，A8互为转置关系](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=6268.3)
 4. [1:46:16 非线性分块矩阵为什么这样写，也是因为test function决定了行，未知量决定了所在的列的缘故](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=6376.7)
 5. [2:00:23 在求系数时 将某个单元的解向量传进来 并将test函数，导数阶传进来 在积分点处进行求和得到系数](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=7224.0)
-6. []()
-7. []()
-8. []()
-9. []()
-10. []()
+
+# [2021-04-13](https://www.bilibili.com/video/BV1mX4y1g7rc?t=8.9)
+
+7. [0:55:42 dg和这里区别](https://www.bilibili.com/video/BV1mX4y1g7rc?t=3344.3)
+8. [0:54:14 dg](https://www.bilibili.com/video/BV1mX4y1g7rc?t=3255.6)
+9. [0:55:52 差异 1. 不连续处单元上线积分 2. 基函数](https://www.bilibili.com/video/BV1mX4y1g7rc?t=3352.8)
+10. [0:59:00 dg cg基函数区别](https://www.bilibili.com/video/BV1mX4y1g7rc?t=3540.2)
+
+# [2021-04-18](https://www.bilibili.com/video/BV1S5411c72G?t=227.5)
+
+12. [01:12:30 边界条件](https://www.bilibili.com/video/BV1S5411c72G?t=4350.3)
+13. [0:22:02 红色矩阵不会随着迭代变化而变化 只有绿色部分变化 因此红色矩阵不必每个迭代步都求](https://www.bilibili.com/video/BV1S5411c72G?t=1322.8)
+14. [01:25:47 非稳态stokes和线弹性方程](https://www.bilibili.com/video/BV1S5411c72G?t=5148.1)
+
+# [2021-04-25](https://www.bilibili.com/video/BV1TK4y1Z7yz?t=15.4)
+
+16. [01:20:28 非稳态ns方程](https://www.bilibili.com/video/BV1TK4y1Z7yz?t=4829.2)
