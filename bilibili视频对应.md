@@ -35,9 +35,10 @@
 7. [00:20:00 局部基函数参考单元](https://www.bilibili.com/video/BV1xz4y1r78J?t=1200.5)
 
 # [2020-12-24](https://www.bilibili.com/video/BV1Ra4y1J7LE?t=4.6)
+1. 无
 
 # [2020-12-27](https://www.bilibili.com/video/BV1e5411H7AP?t=8.8)
-
+1. 无
 
 # [2021-1-03](https://www.bilibili.com/video/BV13p4y1x7xs?t=4.9)
 1. [1:39:16 neumann边界](https://www.bilibili.com/video/BV13p4y1x7xs?t=5957.0)
@@ -48,7 +49,7 @@
 6. [1:51:01 neumann边界的添加过程，循环所有边界边，对其中的neumann边界找到其母单元(即二维问题中的三角形，四边形等单元），（获取其型函数），得到积分结果，]()
 
 # [2021-1-07](https://www.bilibili.com/video/BV1ET4y1N77h?t=8.7)
-
+1. 无
 # [2021-1-10](https://www.bilibili.com/video/BV1CK411M71t?t=11.6)
 1. [1:17:00 neumann边界](https://www.bilibili.com/video/BV1CK411M71t?t=4620.3)
 2. [1:31:15 robin边界](https://www.bilibili.com/video/BV1CK411M71t?t=5477.3)
@@ -83,5 +84,39 @@
 10. [1:41:45 stress边界添加（即neumann边界）在以前处理dirichlet边界时，由于其边界处值已知，可以不做测试，因此设置测试函数为0，简化方程，后面再处理此边界，但是现在stress边界时，边界处的值未知，因此需要做测试，不能将测试函数置零](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=6106.3)
 11. [1:44:00 方程中由于都是u的导数，为stress边界时，解是不唯一的](https://www.bilibili.com/video/BV1Xy4y1t7Ru?t=6241.4)
 
-   
+# [2021-04-04](https://www.bilibili.com/list/ml2277477092?spm_id_from=333.999.0.0&oid=672457058&bvid=BV19U4y1873J)
+1. [0:17:20 boundary condition in normal/tangential directions](https://www.bilibili.com/video/BV19U4y1873J?t=1040.4)
+2. [59:34 二维稳态n-s方程](https://www.bilibili.com/video/BV19U4y1873J?t=3574.9)
+3. [21:40 在法向/切向上的 stress boundry](https://www.bilibili.com/video/BV19U4y1873J?t=1300.4)
+4. [32:27  对于单元边是直边的，法向/切向量可以从积分中提到外面](https://www.bilibili.com/video/BV19U4y1873J?t=1947.8)
+5. [1:26:05 速度（多个方向用同一个基函数）和压力用了不同基函数 talor-hood](https://www.bilibili.com/video/BV19U4y1873J?t=5165.7)
+6. [1:29:20 根据速度（v1，v2，p）三个变量，将会得到一个3x3到方块阵](https://www.bilibili.com/video/BV19U4y1873J?t=5360.3)
+7. [0:40:00 robin边界](https://www.bilibili.com/video/BV19U4y1873J?t=2400.5)
+8. [1:11:15 切向标量形式不会出现p](https://www.bilibili.com/video/BV19U4y1873J?t=4275.0)
+9. [1:33:36 3x3分块阵的由来 第一二行由第一个方程得到 第三行由第二个方程得到](https://www.bilibili.com/video/BV19U4y1873J?t=5618.5)
 
+#[2021-04-11](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=6.3)
+1. [1:05:25 给出了T(u,p) D(u)的定义](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=3927.8)
+2. [1:03:48 非线性问题](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=3828.8)
+3. [1:06:17 推导弱格式，对方程内积v](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=3977.1)
+4. [1:17:10 标量化的2d navier-stokes 方程](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=4630.0)
+5. [1:19:20 对非线性项做线性化](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=4760.0)
+6. [1:28:56 标量形式的线性化后的方程](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=5336.6)
+7. [1:06:00 推导弱格式要内积](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=3960.6)
+8. [1:11:06 非线性项 因为两个u](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=4266.1)
+9. [1:30:30 求已知节点值的偏导使用之前的有限元函数](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=5430.2)
+10. [0:17:40 在neumann边界下 u的解也不唯一，因为方程中都是关于u的导数的](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=1060.6)
+11. [0:50:33 开始n-s方程 （非线性）](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=3034.2)
+12. [1:03:19 开始n-s方程 （非线性）](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=3799.4)
+13. [1:05:25 给出了T(u,p) D(u)的定义](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=3925.1)
+14. [1:22:07 从里面公式可看出，对于方程变量是u表示，对于test function使用v表示，在矩阵分块时，根据u是u1，u2。。。对矩阵进行列的分块，根据test function是v1，v2进行行的分块](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=4928.2)
+1. [1:24:39 newton迭代法的思路](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=5079.9)
+2. [1:23:33 将一个非线形项分为三个线性项目，其中两个在方程左边，一个在方程右边](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=5013.4)
+3. [1:44:27  A3，A4；A5，A7；A6，A8互为转置关系](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=6268.3)
+4. [1:46:16 非线性分块矩阵为什么这样写，也是因为test function决定了行，未知量决定了所在的列的缘故](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=6376.7)
+5. [2:00:23 在求系数时 将某个单元的解向量传进来 并将test函数，导数阶传进来 在积分点处进行求和得到系数](https://www.bilibili.com/video/BV1Cy4y1x7r8?t=7224.0)
+6. []()
+7. []()
+8. []()
+9. []()
+10. []()
