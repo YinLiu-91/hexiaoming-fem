@@ -59,7 +59,7 @@
 6. [2:13:26 comsol发展](https://www.bilibili.com/video/BV1CK411M71t?t=8006.9)
 
 # [2021-1-17](https://www.bilibili.com/video/BV1vt4y1z7mG?t=4.6)
-1. [1:38:10 波方程](https://www.bilibili.com/video/BV1vt4y1z7mG?t=5890.1)
+1. [1:38:10 波方程](https://www.bilibili.com/video/BV1vt4y1z7mG?t=5891.1)
 2. [0:15:05 时间相关矩阵的一般形式](https://www.bilibili.com/video/BV1vt4y1z7mG?t=905.8)
 3. [0:17:48 与时间相关的仅为系数函数c](https://www.bilibili.com/video/BV1vt4y1z7mG?t=1069.3)
 4. [0:35:29 时间相关ode](https://www.bilibili.com/video/BV1vt4y1z7mG?t=2129.7)
